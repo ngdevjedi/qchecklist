@@ -61,6 +61,7 @@ import { LoadingOverlayComponent } from './core/loading-overlay/loading-overlay.
 import { DeploymentListComponent } from './checklist/deployment-list/deployment-list.component';
 import { ApplicationComponent } from './checklist/application/application.component';
 import { TeamComponent } from './checklist/team/team.component';
+import { DeploymentApplicationComponent } from './checklist/deployment-application/deployment-application.component';
 
 const perfectScrollbarConfig: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -114,7 +115,8 @@ const perfectScrollbarConfig: PerfectScrollbarConfigInterface = {
     LoadingOverlayComponent,
     DeploymentListComponent,
     ApplicationComponent,
-    TeamComponent
+    TeamComponent,
+    DeploymentApplicationComponent
   ],
   entryComponents: [
     DemoDialog

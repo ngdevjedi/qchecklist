@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ms-team',
+  selector: 'checklist-team',
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.scss']
 })
