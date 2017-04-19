@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {DeploymentListComponent} from "./checklist/deployment-list/deployment-list.component";
 import {DashboardV1Component} from "./demo/custom-pages/dashboard-v1/dashboard-v1.component";
 import {AdminComponent} from "./core/admin/admin.component";
 import {ButtonsComponent} from "./demo/components/buttons/buttons.component";
@@ -44,6 +45,10 @@ const routes: Routes = [
     children: [
       {
         path: '',
+        component: DeploymentListComponent,
+      },
+      {
+        path: 'dashboard',
         component: DashboardComponent,
       },
       {

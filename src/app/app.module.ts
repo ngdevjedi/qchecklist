@@ -58,6 +58,9 @@ import { GoogleMapsWidgetComponent } from './core/widgets/google-maps-widget/goo
 import { ActivityComponent } from './core/widgets/activity/activity.component';
 import { TrafficSourcesComponent } from './core/widgets/traffic-sources/traffic-sources.component';
 import { LoadingOverlayComponent } from './core/loading-overlay/loading-overlay.component';
+import { DeploymentListComponent } from './checklist/deployment-list/deployment-list.component';
+import { ApplicationComponent } from './checklist/application/application.component';
+import { TeamComponent } from './checklist/team/team.component';
 
 const perfectScrollbarConfig: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -108,7 +111,10 @@ const perfectScrollbarConfig: PerfectScrollbarConfigInterface = {
     GoogleMapsWidgetComponent,
     ActivityComponent,
     TrafficSourcesComponent,
-    LoadingOverlayComponent
+    LoadingOverlayComponent,
+    DeploymentListComponent,
+    ApplicationComponent,
+    TeamComponent
   ],
   entryComponents: [
     DemoDialog
