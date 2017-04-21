@@ -62,6 +62,7 @@ import { DeploymentListComponent } from './checklist/deployment-list/deployment-
 import { ApplicationComponent } from './checklist/application/application.component';
 import { TeamComponent } from './checklist/team/team.component';
 import { DeploymentApplicationComponent } from './checklist/deployment-application/deployment-application.component';
+import { SettingsComponent } from './firebase/settings/settings.component';
 
 const perfectScrollbarConfig: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -116,7 +117,8 @@ const perfectScrollbarConfig: PerfectScrollbarConfigInterface = {
     DeploymentListComponent,
     ApplicationComponent,
     TeamComponent,
-    DeploymentApplicationComponent
+    DeploymentApplicationComponent,
+    SettingsComponent
   ],
   entryComponents: [
     DemoDialog
