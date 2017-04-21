@@ -61,8 +61,8 @@ import { LoadingOverlayComponent } from './core/loading-overlay/loading-overlay.
 import { DeploymentListComponent } from './checklist/deployment-list/deployment-list.component';
 import { ApplicationComponent } from './checklist/application/application.component';
 import { TeamComponent } from './checklist/team/team.component';
-import { FormComponent } from './checklist/application/form/form.component';
-import { FormComponent } from './checklist/team/form/form.component';
+import { DeploymentApplicationComponent } from './checklist/deployment-application/deployment-application.component';
+import { SettingsComponent } from './firebase/settings/settings.component';
 
 const perfectScrollbarConfig: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -117,8 +117,8 @@ const perfectScrollbarConfig: PerfectScrollbarConfigInterface = {
     DeploymentListComponent,
     ApplicationComponent,
     TeamComponent,
-    FormComponent,
-    FormComponent
+    DeploymentApplicationComponent,
+    SettingsComponent
   ],
   entryComponents: [
     DemoDialog

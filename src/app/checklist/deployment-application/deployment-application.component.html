@@ -1,8 +1,8 @@
 <div fxLayout="column" fxLayoutAlign="center stretch">
-    <div fxLayout="row">
+      <div fxLayout="row">
         <md-card class="widget" fxFlex>
             <md-card-title fxLayout="row" fxLayoutAlign="space-between center">
-                <span>Deployments</span>
+                <span>Applications</span>
                 <button md-icon-button [mdMenuTriggerFor]="teamMenu">
           <md-icon>more_vert</md-icon>
         </button>
@@ -11,16 +11,20 @@
                 <table class="table table-hover table-condensed">
                     <thead>
                         <tr>
-                            <th>Title</th>
-                            <th>Deployment Date</th>
-                            <th>Status</th>
+                            <th>Application</th>
+                            <th>Octopus Project</th>
+                            <th>Iteration(s)</th>
+                            <th>Build Source</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let depList of list">
-                            <td>{{ depList.title }}</td>
-                            <td>{{ depList.deploymentDate }}</td>
-                            <td>{{ depList.deploymentStatus }}</td>
+                        <tr *ngFor="let app of applications">
+                            <td>{{ app.application }}</td>
+                            <td>{{ app.octopusProject }}</td>   
+                            <td>Iterations </td>
+                            <td> <a href='file://{{ app.buildSource }}'>{{ app.buildSource }}</a></td>
+                            <td></td>
                         </tr>
                     </tbody>
                 </table>

@@ -1,6 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
+// Core Routes
 import {DeploymentListComponent} from "./checklist/deployment-list/deployment-list.component";
+import {TeamComponent} from "./checklist/team/team.component";
+import {DeploymentApplicationComponent} from './checklist/deployment-application/deployment-application.component';
+
+
+
+//DEMO ROUTES ONLY -- DELETE FOR PRODUCTION
 import {DashboardV1Component} from "./demo/custom-pages/dashboard-v1/dashboard-v1.component";
 import {AdminComponent} from "./core/admin/admin.component";
 import {ButtonsComponent} from "./demo/components/buttons/buttons.component";
@@ -47,6 +55,14 @@ const routes: Routes = [
         path: '',
         component: DeploymentListComponent,
       },
+       {
+        path: 'admin/applications',
+        component: DeploymentApplicationComponent,
+      },
+       {
+        path: 'checklist/team',
+        component: TeamComponent,
+      },  
       {
         path: 'dashboard',
         component: DashboardComponent,
